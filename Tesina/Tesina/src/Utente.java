@@ -23,8 +23,7 @@ public class Utente {
 		setIban(null);
 	}
 	
-	public Utente(String nome, String cognome, String codfisc, int matricola, String password,
-			String email, String iban) {
+	public Utente(String nome, String cognome, String codfisc, int matricola, String password, String email, String iban) {
 		setNome(nome);
 		setCognome(cognome);
 		setCodfisc(codfisc);
@@ -107,6 +106,6 @@ public class Utente {
 				+ costoorario + ", iban=" + iban + "\n";
 	}
 		
-	/*porcatro*/
+	/*da ultimare tostring*/
 	
 }
