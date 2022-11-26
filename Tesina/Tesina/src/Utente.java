@@ -8,6 +8,7 @@ public class Utente {
 	private String email;
 	private double stipendio;
 	private double costoorario;
+	private int oredilavoro;
 	private String iban;
 	private int contmatricola = 0;
 	
@@ -19,6 +20,7 @@ public class Utente {
 		setPassword(null);
 		setEmail(null);
 		setStipendio(0);
+		setOredilavoro(0);
 		setCostoorario(0);
 		setIban(null);
 	}
@@ -31,6 +33,7 @@ public class Utente {
 		setPassword(password);
 		setEmail(email);
 		setStipendio(0);
+		setOredilavoro(0);
 		setCostoorario(costoorario);
 		setIban(iban);
 		contmatricola += 1;
@@ -92,6 +95,13 @@ public class Utente {
 		this.costoorario = costoorario;
 	}
 	
+	public int getOredilavoro() {
+		return oredilavoro;
+	}
+	public void setOredilavoro(int oredilavoro) {
+		this.oredilavoro = oredilavoro;
+	}
+	
 	public String getIban() {
 		return iban;
 	}
@@ -102,8 +112,7 @@ public class Utente {
 	@Override
 	public String toString() {
 		return "Utente nome=" + nome + ", cognome=" + cognome + ", codfisc=" + codfisc + ", matricola=" + matricola
-				+ ", password=" + password + ", email=" + email + ", stipendio=" + stipendio + ", costoorario="
-				+ costoorario + ", iban=" + iban + "\n";
+				+ ", password=" + password + ", email=" + email + ", stipendio=" + stipendio + "Ore di lavoro: " + oredilavoro +  ", costoorario=" + costoorario + ", iban=" + iban + "\n";
 	}
 		
 	/*da ultimare tostring*/
