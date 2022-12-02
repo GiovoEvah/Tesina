@@ -11,6 +11,7 @@ public class Utente {
 	private int oredilavoro;
 	private String iban;
 	private int contmatricola = 0;
+	private String codturno;
 	
 	public Utente() {
 		setNome(null);
@@ -23,6 +24,7 @@ public class Utente {
 		setOredilavoro(0);
 		setCostoorario(0);
 		setIban(null);
+		setCodturno(null);
 	}
 	
 	public Utente(String nome, String cognome, String codfisc, int matricola, String password, String email, String iban) {
@@ -37,6 +39,7 @@ public class Utente {
 		setCostoorario(costoorario);
 		setIban(iban);
 		contmatricola += 1;
+		setCodturno(codturno);
 	}
 	
 	public String getNome() {
@@ -109,10 +112,17 @@ public class Utente {
 		this.iban = iban;
 	}
 
+	public String getCodturno() {
+		return codturno;
+	}
+
+	public void setCodturno(String codturno) {
+		this.codturno = codturno;
+	}
+
 	@Override
 	public String toString() {
-		return "Utente nome=" + nome + ", cognome=" + cognome + ", codfisc=" + codfisc + ", matricola=" + matricola
-				+ ", password=" + password + ", email=" + email + ", stipendio=" + stipendio + "Ore di lavoro: " + oredilavoro +  ", costoorario=" + costoorario + ", iban=" + iban + "\n";
+		return "Utente nome=" + nome + ", cognome=" + cognome + ", codfisc=" + codfisc + ", matricola=" + matricola + ", password=" + password + ", email=" + email + ", stipendio=" + stipendio + "Ore di lavoro: " + oredilavoro +  ", costoorario=" + costoorario + ", iban=" + iban + "\n";
 	}
 		
 	/*da ultimare tostring*/

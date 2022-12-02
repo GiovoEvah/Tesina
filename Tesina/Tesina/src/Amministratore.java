@@ -12,7 +12,7 @@ public class Amministratore extends Utente{
 	}
 
 	public void setIsadmin(boolean isadmin) {
-		this.isadmin = isadmin;
+		this.isadmin = true;
 	}
 
 	@Override
